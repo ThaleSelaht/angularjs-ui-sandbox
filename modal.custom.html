@@ -1,0 +1,36 @@
+<div class="modal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div ng-class="{'submissionMessage' : submission}" ng-model="submissionMessage">
+            {{submissionMessage}}
+        </div>
+        <div class="bg-traco-2"><img class="logo-thumb img-responsive" src="app/img/min/thumb-logo-3.png" alt="Logo Thumb"></div>  
+      </div>
+      <form name="formThumb" ng-submit="submitForm()" novalidate>
+    
+      <div class="modal-body">
+          <header class="destaque">QUER FALAR DIRETO CONOSCO?</header>
+          <header>Deixe seu nome e telefone e te ligamos!</header>
+          <input type="text" ng-model="formData.nome" ng-required="true" class="form-control" name="nome" placeholder="Nome*"> 
+          <input type="telefone" ng-model="formData.fone" ng-required="true" class="form-control" name="fone" placeholder="Telefone*">  
+          <input type="email" ng-model="formData.email" ng-required="true" class="form-control" name="email" placeholder="E-mail*"> 
+          <header class="destaque">QUER ADIANTAR O ASSUNTO?</header> 
+          <select class="form-control" name="assunto" ng-model="formData.assunto">
+            <option disabled selected="selected">...</option>
+            <option>Tenho uma ideia e quero que vire um negócio Online</option>
+            <option>Meu negócio é Offline, quero andar junto com o Online</option>
+            <option>Meu negócio é Online e quero gerar mais resultados</option>
+          </select>
+          <header class="destaque">NÃO ACERTAMOS O ASSUNTO? <span>Escreva para nós</span> </header>
+          <textarea class="form-control" rows="3" name="descricao" ng-model="formData.descricao"></textarea> 
+      </div>
+
+      <div class="modal-footer">
+        *Campos obrigatórios
+      <input class="btn" type="submit" value="Enviar" ng-disabled="formThumb.$invalid">
+      </form>
+      </div>
+    </div>
+  </div>
+</div>

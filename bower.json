@@ -1,0 +1,20 @@
+{
+  "name": "thumb",
+  "authors": [
+    "Thales <thalespizza@gmail.com>"
+  ],
+  "description": "Projeto Thumb",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "www.thumb.com.br",
+  "dependencies": {
+    "angular-strap": "~2.3.7",
+    "bootstrap": "^3.3.6",
+    "angular-route": "^1.4.8",
+    "angular-animate": "^1.4.8",
+    "font-awesome": "^4.5.0",
+    "angular": "^1.4.8",
+    "angular-bootstrap": "^1.1.0"
+  }
+}
